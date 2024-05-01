@@ -9,7 +9,7 @@ public class Producto {
 	}
 	private String codigo;
 	private String descripcion;
-	private double precioU;
+	private double precioUnitario;
 	private OrigenFabricacion origenFabricacion  ;
 	private Categoria  categoria;
 	
@@ -17,33 +17,60 @@ public class Producto {
 	public Producto(String codigo, String descripcion, double precioU,OrigenFabricacion origenFabricacion , Categoria categoria) {
 		this.codigo = codigo;
 		this.descripcion = descripcion;
-		this.precioU = precioU;
+		this.precioUnitario = precioU;
 		this.origenFabricacion = origenFabricacion;
 		this.categoria= categoria;
 	}
 	
+    
+    
 	@Override
 	public String toString() {
-		return "Producto [codigo=" + codigo + ", descripcion=" + descripcion + ", precioU=" + precioU
-				+ ", origenFabricacion=" + origenFabricacion + "]";
+		return "Producto [codigo=" + codigo + ", descripcion=" + descripcion + ", precioUnitario=" + precioUnitario
+				+ ", origenFabricacion=" + origenFabricacion + ", categoria=" + categoria + "]";
 	}
+
+
+
 	public String getCodigo() {
 		return codigo;
 	}
+
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
+
 	public String getDescripcion() {
 		return descripcion;
 	}
+
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	public double getPrecioU() {
-		return precioU;
+
+	public double getPrecioUnitario() {
+		return precioUnitario;
 	}
-	public void setPrecioU(double precioU) {
-		this.precioU = precioU;
+
+	public void setPrecioUnitario(double precioUnitario) {
+		this.precioUnitario = precioUnitario;
 	}
+
+	public OrigenFabricacion getOrigenFabricacion() {
+		return origenFabricacion;
+	}
+
+	public void setOrigenFabricacion(OrigenFabricacion origenFabricacion) {
+		this.origenFabricacion = origenFabricacion;
+	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
+    
 	
 }
