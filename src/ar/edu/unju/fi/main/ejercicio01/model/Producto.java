@@ -22,28 +22,54 @@ public class Producto {
 		this.categoria= categoria;
 	}
 	
+
+
 	@Override
 	public String toString() {
-		return "Producto [codigo=" + codigo + ", descripcion=" + descripcion + ", precioU=" + precioU
-				+ ", origenFabricacion=" + origenFabricacion + "]";
+		return "Producto [codigo=" + codigo + ", descripcion=" + descripcion + ", precioUnitario=" + precioU
+				+ ", origenFabricacion=" + origenFabricacion + ", categoria=" + categoria + "]";
 	}
+
+
+
 	public String getCodigo() {
 		return codigo;
 	}
+
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
+
 	public String getDescripcion() {
 		return descripcion;
 	}
+
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	public double getPrecioU() {
+
+	public double getPrecioUnitario() {
 		return precioU;
 	}
-	public void setPrecioU(double precioU) {
-		this.precioU = precioU;
+
+	public void setPrecioUnitario(double precioUnitario) {
+		this.precioU = precioUnitario;
 	}
-	
+
+	public OrigenFabricacion getOrigenFabricacion() {
+		return origenFabricacion;
+	}
+
+	public void setOrigenFabricacion(OrigenFabricacion origenFabricacion) {
+		this.origenFabricacion = origenFabricacion;
+	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
+    
 }
