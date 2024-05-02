@@ -7,8 +7,8 @@ public enum Provincia {
     TUCUMAN(1738920, 22524),
     CATAMARCA(397469, 102606),
     LA_RIOJA(331847, 89680),
-    SANTIAGO_DEL_ESTERO(874006, 136351);
-    
+    SANTIAGO_DEL_ESTERO(874006, 136351),
+    NEUQUEN(22222,1111);
     private int cantidadPoblacion;
     private int superficie;
 
